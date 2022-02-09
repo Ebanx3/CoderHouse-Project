@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4c8c885b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav>
+            <samp class="logo">LOGO</samp>
+            <div class="nav__responsive">
+                <i class="fas fa-bars nav__responsive__button"></i>
+                <ul class="nav__ul__responsive">
+                    <li class="nav__ul__responsive__li"><a href="../index.html">INICIO</a></li>
+                    <li class="nav__ul__responsive__li"><a href="./nuevos.html">NUEVOS</a></li>
+                    <li class="nav__ul__responsive__li"><a href="./usados.html">USADOS</a></li>
+                    <li class="nav__ul__responsive__li"><a href="">VENDE TU LIBRO</a></li>
+                    <li class="nav__ul__responsive__li usuario__li"><samp>USUARIO</samp> 
+                        <ul class="usuario">
+                            <li><input type="text" name="" id=""  placeholder="Nombre de Usuario"></li>
+                            <li><input type="password" name="" id="" placeholder="Contraseña"></li>
+                            <li><input type="button" value="Conectarse"></li>
+                            <li><a href="">Olvidaste tu contraseña?</a></li>
+                            <li><input type="button" value="Registrarse"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><a href="../index.html">INICIO</a></li>
+                <li class="nav__ul__li"><a href="./nuevos.html">NUEVOS</a></li>
+                <li class="nav__ul__li"><a href="./usados.html">USADOS</a></li>
+                <li class="nav__ul__li"><a href="">VENDE TU LIBRO</a></li>
+                <li class="nav__ul__li usuario__li"><samp>USUARIO</samp> 
+                    <ul class="usuario">
+                        <li><input type="text" name="" id=""  placeholder="Nombre de Usuario"></li>
+                        <li><input type="password" name="" id="" placeholder="Contraseña"></li>
+                        <li><input type="button" value="Conectarse"></li>
+                        <li><a href="">Olvidaste tu contraseña?</a></li>
+                        <li><input type="button" value="Registrarse"></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!--MAIN CONTENT-->
+    <main>
+        <form class="formularioVendeLibro">
+            <fieldset>
+                <legend>Vende tu libro</legend>
+                <div class="divNombreLibro">
+                    <label for="nombreLibro">Coloca el nombre del Libro:</label>
+                    <input type="text" name="" id="nombreLibro" required>
+                </div>
+                <div class="divAutorLibro">
+                    <label for="autorLibro">Coloca el autor del Libro</label>
+                    <input type="text" id="autorLibro" required>
+                </div>
+                <div class="divGeneroLibro">
+                    <label for="generoLibro">Selecciona el género del libro</label>
+                    <select name="generoLibro" id="selectorGenero" >
+                        <option value="Aventuras">Aventuras</option>
+                        <option value="Ciencia Ficción">Ciencia Ficción</option>
+                        <option value="Policíaca">Policíaca</option>
+                        <option value="Terror y misterio">Terror y misterio</option>
+                        <option value="Romántica">Romántica</option>
+                        <option value="Mitología">Mitología</option>
+                        <option value="Teatro">Teatro</option>
+                        <option value="Cuento">Cuento</option>
+                    </select>
+                </div>
+                <div class="divEstadoLibro">
+                    <label for="estadoLibro">Indica el estado del libro</label>
+                    <select  id="estadoLibro">
+                        <option value="Buen estado">Buen estado</option>
+                        <option value="Excelente">Excelente estado</option>
+                        <option value="Como nuevo">Como nuevo</option>
+                    </select>
+                </div>
+                <div class="subeFotos">
+                    <label for="subeFotosLibro">Sube algunas fotos de tu libro</label>
+                    <input type="file" name="" id="subeFotosLibro">
+                </div>
+                <div class="divPrecioLibro">
+                    <label for="precioLibro">Selecciona el precio al que quieres vender tu libro</label>
+                    <input type="number" id="precioLibro" required>
+                </div>
+                <div class="divAceptarCondiciones">
+                    <label for="aceptarCondiciones">Acepta las condiciones de venta</label>
+                    <input type="checkbox" id="aceptarCondiciones" required>
+                </div>
+                <div class="divEnviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+     <!--FOOTER-->
+     <footer>
+        <div class="footer__info">
+            <span class="footer__info__titulo">INFORMACIÓN</span>
+            <p class="footer__info__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iste voluptatum sunt minima at, neque fuga recusandae vitae facilis quia magnam eaque beatae!</p>
+        </div>
+        <div class="footer__redes">
+            <span class="footer__redes__titulo">NUESTRAS REDES </span>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
