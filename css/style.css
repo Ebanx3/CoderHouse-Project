@@ -45,6 +45,7 @@ nav {
 .nav__ul__li a {
     text-decoration: none;
     color: white;
+    text-shadow: 0 1px 1px black;
 }
 
 .nav__responsive {
@@ -120,31 +121,75 @@ main {
     padding: 15px;
     overflow:hidden;
     width: 30%;
+    min-height: 36vh;
+    background: linear-gradient(#F9E4D4, #f8c24d8a);
+    box-shadow: 0 1px 1px black;
 }
 
 .libro__imagen {
 
     max-width: 40%;
     max-height: 200px;
-
+    border: 1px solid black;
+    align-self: center;
 }
 
 .libro__info {
     width: 60%;
     padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 15%;
 }
 
 .libro__info__nombre {
     font-size: 1.2rem;
     font-weight: bold;
+    grid-column: 1/4;
 }
 
 .libro__info__descripcion {
     margin: 12px 0;
+    grid-column: 1/4;
 }
 .libro__info__precio {
     float: right;
     font-weight: bold;
+    grid-column: 1/2;
+}
+
+.btn{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin: 0 auto;
+    border-radius: 10%;
+    align-self: center;
+    padding: 5px;
+    transition:all 1s;
+    transition-timing-function: ease-out;
+}
+
+.btn-darkRed{
+    background-color: #d32864;
+    display: none;
+    opacity: 0%;
+}
+.btn-darkRed:hover{
+    background-color: #701334;
+}
+
+.btn-darkRed:active {
+    background-color: #3b0619;
+}
+
+.libro__info:hover > .btn{
+    display: block;
+    opacity: 100%;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
 }
 
 .recomendados__verMas {
@@ -156,7 +201,7 @@ main {
 .seccion2 {
     display: flex;
     flex-wrap: wrap;
-    background-color: #D67D3E;
+    background:linear-gradient(#D67D3E, #bb6457) ;
     margin: 20vh 0;
     padding: 10vh 20px;
 }
@@ -185,6 +230,19 @@ main {
     width: 50%;
     height: 40vh;
 }    
+
+.btn-blue{
+    background-color: rgb(96, 45, 212);
+    display: inline-block;
+}
+
+.btn-blue:hover {
+    background-color: rgb(61, 25, 145);
+}
+
+.btn-blue:active {
+    background-color: rgb(26, 8, 68);
+}
 
 /* ------------------------SECCION COMENTARIOS */
 
