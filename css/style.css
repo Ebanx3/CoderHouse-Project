@@ -34,6 +34,20 @@ nav {
 .logo {
     font-size: 1.4rem;
     color: white;
+    margin-left: 2%;
+    animation-name: logo-anim;
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes logo-anim {
+    0%{
+        transform: scale(0);
+        
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .nav__ul__li {
@@ -121,9 +135,16 @@ main {
     padding: 15px;
     overflow:hidden;
     width: 30%;
-    min-height: 36vh;
     background: linear-gradient(#F9E4D4, #f8c24d8a);
     box-shadow: 0 1px 1px black;
+    justify-content: space-around;
+    transition: all 1s;
+}
+
+.libro:hover{
+    transform: scale(1.2);
+    box-shadow: 0 3px 1px rgb(95, 7, 7);
+
 }
 
 .libro__imagen {
@@ -409,10 +430,12 @@ footer {
     height: 35vh;
     padding: 10px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+
 }
 
 .usuario__li:hover > ul{
     display: block;
+
 }
 
 .usuario li{
@@ -420,6 +443,7 @@ footer {
     margin: 5px 0;
     float: right;
     width: 90%;
+   
 }
 
 .usuario__li samp{
@@ -670,6 +694,10 @@ fieldset div{
 
     .libro__descripcion {
         font-size: 1rem;
+    }
+
+    .libro:hover{
+        transform: scale(1.1);
     }
 }
 

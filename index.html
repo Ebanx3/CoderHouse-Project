@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a4c8c885b1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!--HEADER-->
@@ -138,7 +140,7 @@
             <a href="" class="recomendados__verMas">ver más...</a>
         </section>
 
-        <section class="seccion2">
+        <section class="seccion2" data-aos="fade-left">
             <div class="seccion2__info">
                 <h2 class="seccion2__info__titulo">Título sección 2</h2>
                 <ul class="seccion2__info__lista">
@@ -159,7 +161,7 @@
             </div>
         </section>
 
-        <section class="comentarios">
+        <section class="comentarios" data-aos="fade-right">
             <span class="comentarios__titulo">COMENTARIOS DE NUESTROS USUARIOS</span>
             <div class="tarjeta">
                 <img class="tarjeta__foto" src="./sources/persona1.png" alt="">
@@ -199,6 +201,8 @@
             <a href=""><i class="fab fa-twitter-square"></i></a>
         </div>
     </footer>
-    
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
