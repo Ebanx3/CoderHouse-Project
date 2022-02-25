@@ -1,36 +1,28 @@
+@import "./variables";
 
-footer {
-    background-color: #470D21;
+.footer {
+    background-color: $color-secundario;
     color: white;
     padding: 15px;
     display: flex;
-    
-}
-
-.footer__info__titulo {
-    display: block;
-    text-align: center;
-}
-
-.footer__info__texto {
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.footer__redes {
-
-    width: 45%;
-    text-align: center;
-}
-
-.footer__redes__titulo {
-    display: block;
-    text-align: center;
-}
-
-.footer__redes i{
-    font-size: 2rem;
-    margin: 5px 10px;
-    color: white;
+    &__info{
+        &__titulo{
+            display: block;
+            text-align: center;
+        }
+        &__texto {
+            font-size: 0.9rem;
+            text-align: center;
+        }        
+    }
+    &__redes {
+        width: 45%;
+        text-align: center;
+        i{
+            font-size: 2rem;
+            margin: 5px 10px;
+            color: white;
+        }
+    }
 }
 

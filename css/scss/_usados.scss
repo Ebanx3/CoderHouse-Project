@@ -7,61 +7,54 @@
     align-items: flex-start;
     background-color: #470D21;
     padding: 25px;
+    label{
+        display: block;
+        margin: 10px 0;
+        color: white;
+    }
+    .listaGenerosUsados {
+        align-self: flex-end;
+        text-align: right;
+        list-style-type: none;
+        li{
+            a{
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                color: #92425e;
+            }
+        }
+    }
+    #buscadorLibroUsados {
+        width: 90%;
+        height: 30px;
+        padding: 4px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .buscarPorGeneroUsados {
+        font-size: 1.3rem;
+        margin: 15px 0;
+        font-weight: bold;
+        color: white;
+    }
+    ul{
+        text-align: right;
+        list-style-type: none;
+        li{
+            a{
+                font-weight: bold;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            a:hover{
+                color: #c4c4c4;
+            }
+        }
+    }
 }
-
-.nav__lateralUsados label{
-    display: block;
-    margin: 10px 0;
-    color: white;
-}
-
-.listaGenerosUsados {
-    align-self: flex-end;
-    text-align: right;
-    list-style-type: none;
-}
-
-.listaGenerosUsados li a{
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.listaGenerosUsados li a:hover{
-    color: #92425e;
-}
-
-.buscarPorGeneroUsados {
-    font-size: 1.3rem;
-    margin: 15px 0;
-    font-weight: bold;
-    color: white;
-}
-
-#buscadorLibroUsados {
-    width: 90%;
-    height: 30px;
-    padding: 4px;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.nav__lateralUsados ul{
-    text-align: right;
-    list-style-type: none;
-}
-
-.nav__lateralUsados ul li a{
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
-.nav__lateralUsados ul li a:hover{
-    color: #c4c4c4;
-}
-
 
 .contenido__tabla {
 
@@ -69,24 +62,22 @@
     border-left: black solid 1px;
     font-size: 1.2rem;
     padding: 15px;
+    tr td{
+        padding: 15px 0;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: #470D21;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #b65476;
+        }
+    }
     
-}
-
-.contenido__tabla tr td{
-    padding: 15px 0;
-    text-align: center;
 }
 
 .tituloPagina {
     text-align: center;
 }
 
-td a{
-    text-decoration: none;
-    color: #470D21;
-    font-weight: bold;
-}
-
-td a:hover{
-    color: #b65476;
-}

@@ -3,43 +3,36 @@
     justify-content: center;
     gap: 7%;
     margin: 15vh auto;
-}
-
-.portadaLibro {
-    height: 70vh;
-}
-
-.libro__inf {
-    width: 40%;
-    padding: 25px;
-
-}
-
-.libro__titulo {
-    font-size: 2.5rem;
-}
-
-.libro__descripcion {
-    font-size: 1.4rem;
-    margin: 15px 0;
-}
-
-.libro__precio {
-    display: block;
-    float: left;
-    margin: 15px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.botonComprar {
-    float: right;
-    background-color: rgba(255, 255, 255, 0.74);
-    padding: 10px;
-    border: black solid 1px;
-    border-radius: 10%;
-    font-weight: bold;
-    margin: 15px;
+    .portadaLibro {
+        height: 70vh;
+    }
+    .libro__inf {
+        width: 40%;
+        padding: 25px;
+        .libro__titulo {
+            font-size: 2.5rem;
+        }
+        .libro__descripcion {
+            font-size: 1.4rem;
+            margin: 15px 0;
+        }
+        .libro__precio {
+            display: block;
+            float: left;
+            margin: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .botonComprar {
+            float: right;
+            background-color: rgba(255, 255, 255, 0.74);
+            padding: 10px;
+            border: black solid 1px;
+            border-radius: 10%;
+            font-weight: bold;
+            margin: 15px;
+        }
+    }
 }
 
 .talvez {

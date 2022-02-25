@@ -5,37 +5,35 @@
     background:linear-gradient(#D67D3E, #bb6457) ;
     margin: 20vh 0;
     padding: 10vh 20px;
-}
-
-.seccion2__info {
+    &__info {
     
-    width: 45%;
-    margin: 0 20px;
-
-
+        width: 45%;
+        margin: 0 20px;
+        &__lista{
+            li{
+                margin: 16px 0;
+                font-size: 1.1rem;
+            }
+        }
+        input{
+            float: right;
+            font-size: 1.2rem;
+        }
+    }
+    &__video {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 40vh;
+    }
 }
-
-.seccion2__info__lista li{
-    margin: 16px 0;
-    font-size: 1.1rem;
-}
-
-.seccion2__info input{
-    float: right;
-    font-size: 1.2rem;
-}
-
-.seccion2__video {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    height: 40vh;
-}    
+  
 
 .btn-blue{
     background-color: rgb(96, 45, 212);
     display: inline-block;
 }
+
 
 .btn-blue:hover {
     background-color: rgb(61, 25, 145);
