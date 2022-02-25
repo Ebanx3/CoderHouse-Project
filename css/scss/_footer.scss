@@ -1,0 +1,36 @@
+
+footer {
+    background-color: #470D21;
+    color: white;
+    padding: 15px;
+    display: flex;
+    
+}
+
+.footer__info__titulo {
+    display: block;
+    text-align: center;
+}
+
+.footer__info__texto {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer__redes {
+
+    width: 45%;
+    text-align: center;
+}
+
+.footer__redes__titulo {
+    display: block;
+    text-align: center;
+}
+
+.footer__redes i{
+    font-size: 2rem;
+    margin: 5px 10px;
+    color: white;
+}
+

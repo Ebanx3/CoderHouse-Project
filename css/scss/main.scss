@@ -1,0 +1,27 @@
+/* GENERALES */
+@import "./reset";
+@import "./header";
+@import "./usuario";
+@import "./footer";
+
+/* INDEX */
+@import "./hero";
+@import "./mainContent";
+@import "./seccionRecomendados";
+@import "./seccion2";
+@import "./seccionComentarios";
+
+/* PÁGINA NUEVOS */
+@import "./nuevos";
+
+/* PÁGINA USADOS */
+@import "./usados";
+
+/*  PÁGINA LIBRO */
+@import "./libro";
+
+/* PÁGINA VENDE TU LIBRO */
+@import "./vendeTuLibro";
+
+/* MEDIA QUERIES */
+@import "./mediaQueries";

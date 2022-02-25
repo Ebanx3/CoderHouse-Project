@@ -1,0 +1,94 @@
+.recomendados {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.libro {
+    display: flex;
+    border: solid grey 1px;
+    margin: 15px;
+    padding: 15px;
+    overflow:hidden;
+    width: 30%;
+    background: linear-gradient(#F9E4D4, #f8c24d8a);
+    box-shadow: 0 1px 1px black;
+    justify-content: space-around;
+    transition: all 1s;
+}
+
+.libro:hover{
+    transform: scale(1.2);
+    box-shadow: 0 3px 1px rgb(95, 7, 7);
+
+}
+
+.libro__imagen {
+
+    max-width: 40%;
+    max-height: 200px;
+    border: 1px solid black;
+    align-self: center;
+}
+
+.libro__info {
+    width: 60%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 15%;
+}
+
+.libro__info__nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-column: 1/4;
+}
+
+.libro__info__descripcion {
+    margin: 12px 0;
+    grid-column: 1/4;
+}
+.libro__info__precio {
+    float: right;
+    font-weight: bold;
+    grid-column: 1/2;
+}
+
+.btn{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin: 0 auto;
+    border-radius: 10%;
+    align-self: center;
+    padding: 5px;
+    transition:all 1s;
+    transition-timing-function: ease-out;
+}
+
+.btn-darkRed{
+    background-color: #d32864;
+    display: none;
+    opacity: 0%;
+}
+.btn-darkRed:hover{
+    background-color: #701334;
+}
+
+.btn-darkRed:active {
+    background-color: #3b0619;
+}
+
+.libro__info:hover > .btn{
+    display: block;
+    opacity: 100%;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.recomendados__verMas {
+    align-self: flex-end;
+}

@@ -1,0 +1,39 @@
+.hero {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(0deg, #470D21, #9C0F48 );
+
+}
+
+.hero__fondo {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    z-index: 1;
+    opacity: 15%;
+
+}
+
+.hero__fondo img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero__text{
+    display: inline-block;
+    position: relative;
+    top: 20vh;
+    left: 10%;
+}
+
+.hero__titulo {
+    font-size: 3rem;
+    color: #F9E4D4;
+    z-index: 3;
+}
+
+.hero__lema {
+    color: #F9E4D4;
+    z-index: 3;
+}
