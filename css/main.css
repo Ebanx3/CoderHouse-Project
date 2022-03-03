@@ -94,6 +94,58 @@ header {
       margin: 5px 10px;
       color: white; }
 
+.btn, .btn--comprar, .btn--verUsado, .btn--verNuevo, .btn--vendeLibro {
+  margin: 0 auto;
+  border-radius: 10%;
+  align-self: center;
+  padding: 5px; }
+
+.btn--comprar {
+  background-color: white; }
+
+.btn--comprar:hover {
+  background-color: #c9c9c9; }
+
+.btn--comprar:active {
+  background-color: #414141; }
+  .btn--comprar:active a {
+    color: white; }
+
+.btn--verUsado {
+  background-color: orange; }
+
+.btn--verUsado:hover {
+  background-color: #eb6a00; }
+
+.btn--verUsado:active {
+  background-color: #743a0b; }
+  .btn--verUsado:active a {
+    color: white; }
+
+.btn--verNuevo {
+  background-color: #9C0F48; }
+
+.btn--verNuevo:hover {
+  background-color: #701334; }
+
+.btn--verNuevo:active {
+  background-color: #3b0619; }
+
+.btn--vendeLibro {
+  background-color: blue; }
+
+.btn--vendeLibro {
+  text-align: center; }
+  .btn--vendeLibro a {
+    color: white;
+    text-decoration: none; }
+
+.btn--vendeLibro:hover {
+  background-color: #0832a3; }
+
+.btn--vendeLibro:active {
+  background-color: #2e0077; }
+
 /* INDEX */
 .hero {
   width: 100%;
@@ -169,7 +221,7 @@ main {
         float: right;
         font-weight: bold;
         grid-column: 1/2; }
-      .recomendados .libro__info .btn {
+      .recomendados .libro__info .btn, .recomendados .libro__info .btn--comprar, .recomendados .libro__info .btn--verUsado, .recomendados .libro__info .btn--verNuevo, .recomendados .libro__info .btn--vendeLibro {
         grid-column: 2/4;
         grid-row: 3/4;
         margin: 0 auto;
@@ -178,24 +230,19 @@ main {
         padding: 5px;
         transition: all 1s;
         transition-timing-function: ease-out; }
-        .recomendados .libro__info .btn a {
+        .recomendados .libro__info .btn a, .recomendados .libro__info .btn--comprar a, .recomendados .libro__info .btn--verUsado a, .recomendados .libro__info .btn--verNuevo a, .recomendados .libro__info .btn--vendeLibro a {
           color: white;
           text-decoration: none; }
-      .recomendados .libro__info .btn-darkRed {
-        background-color: #d32864;
+      .recomendados .libro__info .btn--verNuevo {
         display: none;
         opacity: 0%; }
-      .recomendados .libro__info .btn-darkRed:hover {
-        background-color: #701334; }
-      .recomendados .libro__info .btn-darkRed:active {
-        background-color: #3b0619; }
   .recomendados .libro:hover {
     transform: scale(1.2);
     box-shadow: 0 3px 1px #5f0707; }
   .recomendados__verMas {
     align-self: flex-end; }
 
-.libro__info:hover > .btn {
+.libro__info:hover > .btn, .libro__info:hover > .btn--comprar, .libro__info:hover > .btn--verUsado, .libro__info:hover > .btn--verNuevo, .libro__info:hover > .btn--vendeLibro {
   display: block;
   opacity: 100%; }
 
@@ -390,14 +437,15 @@ main {
       margin: 15px;
       font-size: 2rem;
       font-weight: bold; }
-    .libroCompleto .libro__inf .botonComprar {
+    .libroCompleto .libro__inf .btn--comprar {
       float: right;
-      background-color: rgba(255, 255, 255, 0.74);
       padding: 10px;
       border: black solid 1px;
       border-radius: 10%;
       font-weight: bold;
       margin: 15px; }
+      .libroCompleto .libro__inf .btn--comprar a {
+        text-decoration: none; }
 
 .talvez {
   font-size: 2rem;

@@ -55,19 +55,11 @@
                     text-decoration: none;
                 }
             }
-            .btn-darkRed{
-                background-color: #d32864;
+            .btn--verNuevo{
                 display: none;
                 opacity: 0%;
             }
-            .btn-darkRed:hover{
-                background-color: #701334;
-            }
-            
-            .btn-darkRed:active {
-                background-color: #3b0619;
-            }
-        }
+        }   
     }
     .libro:hover{
         transform: scale(1.2);

@@ -1,0 +1,67 @@
+@import "./variables";
+
+$botones:(
+    comprar: white,
+    verUsado: orange,
+    verNuevo: $color-primario,
+    vendeLibro:blue
+);
+
+.btn{
+    margin: 0 auto;
+    border-radius: 10%;
+    align-self: center;
+    padding: 5px;
+}
+
+@each $boton,$color in $botones{
+    .btn--#{$boton}{
+        @extend .btn;
+        background-color: $color;
+    }
+    @if $boton == verNuevo {
+        .btn--#{$boton}:hover{
+            background-color: #701334;
+        }
+        .btn--#{$boton}:active{
+            background-color: #3b0619;
+        }
+    }
+    @if $boton == comprar{
+        .btn--#{$boton}:hover{
+            background-color: #c9c9c9;
+        }
+        .btn--#{$boton}:active{
+            background-color: #414141;
+            a{
+                color: white;
+            }
+        }
+    }
+    @if $boton == verUsado {
+        .btn--#{$boton}:hover{
+            background-color: #eb6a00;
+        }
+        .btn--#{$boton}:active{
+            background-color: #743a0b;
+            a{
+                color: white;
+            }
+        }
+    }
+    @if $boton == vendeLibro {
+        .btn--#{$boton}{
+            text-align: center;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .btn--#{$boton}:hover{
+            background-color: #0832a3;
+        }
+        .btn--#{$boton}:active{
+            background-color: #2e0077;
+        }
+    }
+}
