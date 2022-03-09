@@ -98,7 +98,11 @@ header {
   margin: 0 auto;
   border-radius: 10%;
   align-self: center;
-  padding: 5px; }
+  padding: 5px;
+  text-align: center; }
+  .btn a, .btn--comprar a, .btn--verUsado a, .btn--verNuevo a, .btn--vendeLibro a {
+    text-decoration: none;
+    color: white; }
 
 .btn--comprar {
   background-color: white; }
@@ -306,13 +310,10 @@ main {
 /* PÁGINA NUEVOS */
 .nu__main {
   width: 90%;
-  margin: 10vh auto;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 10vh 1fr; }
+  margin: 10vh auto; }
   .nu__main .tituloPagina {
-    grid-column: 1/3;
-    margin: auto; }
+    margin: auto;
+    width: 100%; }
   .nu__main .nav__lateral {
     display: flex;
     flex-direction: column;
@@ -343,16 +344,9 @@ main {
   .nu__main .contenido {
     height: 70vh;
     padding: 5px;
+    width: 80%;
     overflow: hidden;
     overflow-y: scroll; }
-    .nu__main .contenido__tabla {
-      width: 100%;
-      border-left: black solid 1px;
-      font-size: 1.2rem;
-      padding: 15px; }
-      .nu__main .contenido__tabla tr td {
-        padding: 15px 0;
-        text-align: center; }
 
 /* PÁGINA USADOS */
 .nav__lateralUsados {
@@ -396,21 +390,6 @@ main {
       color: #ffffff; }
     .nav__lateralUsados ul li a:hover {
       color: #c4c4c4; }
-
-.contenido__tabla {
-  width: 100%;
-  border-left: black solid 1px;
-  font-size: 1.2rem;
-  padding: 15px; }
-  .contenido__tabla tr td {
-    padding: 15px 0;
-    text-align: center; }
-    .contenido__tabla tr td a {
-      text-decoration: none;
-      color: #470D21;
-      font-weight: bold; }
-    .contenido__tabla tr td a:hover {
-      color: #b65476; }
 
 .tituloPagina {
   text-align: center; }
@@ -478,7 +457,7 @@ main {
     font-size: 0.8rem; }
   .libro__info__nombre {
     font-size: 0.9rem; }
-  .libro {
+  .recomendados .libro {
     width: 45%; }
   .seccion2__info {
     margin: 0 auto;
@@ -506,84 +485,80 @@ main {
     transform: scale(1.1); } }
 
 @media screen and (max-width: 425px) {
-  .seccion2__video {
-    width: 100%;
-    height: 30vh; }
-  nav {
-    display: block; }
-  .nav__responsive__button {
-    float: right;
-    margin-right: 5px;
-    margin-top: 3px; }
-  .nav__ul__responsive__li a {
-    font-size: 0.8rem;
-    color: white;
-    text-decoration: none;
-    margin-left: 10px; }
-  .nav__responsive {
-    display: inline; }
-  .usuario {
-    right: 0;
-    width: 50%;
-    height: 45vh;
-    background-color: #470D21;
-    position: absolute;
-    top: 0; }
-  .usuario li {
-    margin: 3px 5px; }
-  .usuario__li samp {
-    font-size: 0.8rem;
-    margin-left: 10px; }
-  .nav__ul__responsive {
-    display: none; }
-  .nav__ul {
-    display: none; }
-  .nav__responsive:hover > .nav__ul__responsive {
-    display: inline; }
-  .nav__ul__li {
-    display: block; }
-  .hero {
-    height: 40vh; }
-  .hero__fondo {
-    height: 40vh; }
-  .hero__titulo {
-    font-size: 1.3rem; }
-  .hero__lema {
-    font-size: 1rem; }
-  .libro {
-    width: 90%; }
-  .seccion2 {
-    width: 100%; }
-  .seccion2__video {
-    width: 100%; }
   main {
     width: 100%;
     padding: 0; }
+  header .nav {
+    display: block; }
+    header .nav__responsive {
+      display: inline; }
+      header .nav__responsive__button {
+        float: right;
+        margin-right: 5px;
+        margin-top: 3px; }
+      header .nav__responsive .nav__ul__responsive {
+        display: none; }
+        header .nav__responsive .nav__ul__responsive__li a {
+          font-size: 0.8rem;
+          color: white;
+          text-decoration: none;
+          margin-left: 10px; }
+        header .nav__responsive .nav__ul__responsive__li samp {
+          font-size: 0.8rem;
+          margin-left: 10px; }
+        header .nav__responsive .nav__ul__responsive__li .usuario {
+          right: 0;
+          width: 50%;
+          height: 45vh;
+          background-color: #470D21;
+          position: absolute;
+          top: 0; }
+          header .nav__responsive .nav__ul__responsive__li .usuario li {
+            margin: 3px 5px; }
+    header .nav__responsive:hover > .nav__ul__responsive {
+      display: inline; }
+    header .nav__ul {
+      display: none; }
+      header .nav__ul__li {
+        display: block; }
+  .hero {
+    height: 40vh; }
+    .hero__fondo {
+      height: 40vh; }
+    .hero__text__titulo {
+      font-size: 1.3rem; }
+    .hero__text__lema {
+      font-size: 1rem; }
+  .recomendados .libro {
+    width: 90%; }
+  .seccion2 {
+    width: 100%; }
+    .seccion2__video {
+      width: 100%;
+      height: 30vh; }
   .comentarios {
     grid-template-columns: 1fr; }
-  .comentarios__titulo {
-    grid-column: 1/2; }
-  .comentarios__titulo {
-    font-size: 1.2rem; }
+    .comentarios__titulo {
+      grid-column: 1/2;
+      font-size: 1.2rem; }
   .comentarios__info__nombre {
     font-size: 0.9rem; }
-  footer {
+  .footer {
     flex-direction: column; }
-  .footer__redes {
-    width: 100%;
-    margin: 5vh 0; }
+    .footer__redes {
+      width: 100%;
+      margin: 5vh 0; }
   .nu__main {
     grid-template-columns: 1fr;
     margin: 5vh 0; }
+    .nu__main .contenido {
+      margin: 10vh 0;
+      width: 100%; }
   .tituloPagina {
     grid-column: 1/2; }
   #buscadorLibro {
     width: 70%;
     align-self: center; }
-  .contenido {
-    margin: 10vh 0; }
-  .contenido__tabla {
-    border-left: none; }
   .formularioVendeLibro {
     width: 96%; }
   fieldset div label {

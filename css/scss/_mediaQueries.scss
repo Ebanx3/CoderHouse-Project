@@ -25,7 +25,7 @@
         font-size: 0.9rem;
     }
 
-    .libro {
+    .recomendados .libro {
         width: 45%;
     }
 
@@ -78,129 +78,122 @@
 
 
 @media screen and (max-width: 425px){
-    .seccion2__video {
-        width:100%;
-        height: 30vh;
-    }
-
-    nav {
-        display: block;
-    }
-
-    .nav__responsive__button{
-        float: right;
-        margin-right: 5px;
-        margin-top: 3px;
-    }
-
-   .nav__ul__responsive__li a {
-       font-size: 0.8rem;
-       color: white;
-       text-decoration: none;
-       margin-left: 10px;
-    }
-
-    .nav__responsive{
-        display: inline;
-    }
-
-    .usuario{
-        right: 0;
-        width: 50%;
-        height: 45vh;
-        background-color: #470D21;
-        position: absolute;
-        top: 0;
-    }
-
-    .usuario li {
-        margin: 3px 5px;
-    }
-
-    .usuario__li samp{
-        font-size: 0.8rem;
-        margin-left: 10px;
-    }
-
-    .nav__ul__responsive {
-        display: none;
-    }
-
-    .nav__ul {
-        display: none;
-    }
-
-    .nav__responsive:hover > .nav__ul__responsive {
-        display: inline;
-        
-    }
-
-    .nav__ul__li {
-        display: block;
-    }
-
-    .hero {
-        height: 40vh;   
-    }
-
-    .hero__fondo {
-        height: 40vh;
-        
-    }
-
-    .hero__titulo {
-        font-size: 1.3rem;
-    }
-
-    .hero__lema {
-        font-size: 1rem;
-    }
-
-    .libro {
-        width: 90%;
-    }
-
-    .seccion2 {
-        width: 100%;
-    }
-
-    .seccion2__video {
-        width: 100%;
-    }
 
     main {
         width: 100%;
         padding: 0;
     }
 
+    header {
+        .nav {
+            display: block;
+            &__responsive{
+                display: inline;
+                &__button{
+                    float: right;
+                    margin-right: 5px;
+                    margin-top: 3px;
+                }
+                .nav__ul__responsive{
+                    display: none;
+                    &__li {
+                        a {
+                        font-size: 0.8rem;
+                        color: white;
+                        text-decoration: none;
+                        margin-left: 10px;
+                        }
+                        samp{
+                            font-size: 0.8rem;
+                            margin-left: 10px;
+                        }
+                        .usuario{
+                            right: 0;
+                            width: 50%;
+                            height: 45vh;
+                            background-color: #470D21;
+                            position: absolute;
+                            top: 0;
+                            li {
+                                margin: 3px 5px;
+                               
+                            }
+                        }
+                    
+                    }
+                }
+
+        }
+        &__responsive:hover > .nav__ul__responsive{
+            display: inline;;
+        }
+        &__ul{
+            display: none;
+            &__li {
+                display: block;
+            }
+        }
+        
+        
+        }
+    }   
+
+    .hero {
+        height: 40vh;   
+        &__fondo {
+            height: 40vh;   
+        }
+        &__text{
+            &__titulo{
+                font-size: 1.3rem;
+            }
+            &__lema{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .recomendados .libro {
+        width: 90%;
+    }
+
+    .seccion2 {
+        width: 100%;
+        &__video{
+            width: 100%;
+            height: 30vh;
+        }
+    }
+
     .comentarios {
         grid-template-columns: 1fr;
-    }
-
-    .comentarios__titulo{
-        grid-column: 1/2;
-    }
-
-    .comentarios__titulo {
-        font-size: 1.2rem;
+        &__titulo{
+            grid-column: 1/2;
+            font-size: 1.2rem;
+        }
     }
 
     .comentarios__info__nombre {
         font-size: 0.9rem;
     }
 
-    footer {
+    .footer {
         flex-direction: column;
+        &__redes {
+            width: 100%;
+            margin: 5vh 0;
+        }
     }
 
-    .footer__redes {
-        width: 100%;
-        margin: 5vh 0;
-    }    
+        
 
     .nu__main {
         grid-template-columns: 1fr;
         margin: 5vh 0;
+        .contenido {
+            margin: 10vh 0;
+            width: 100%;
+        }
     }
 
     .tituloPagina {
@@ -212,13 +205,7 @@
         align-self: center;
     }
     
-    .contenido {
-        margin: 10vh 0;
-    }
-
-    .contenido__tabla {
-        border-left: none;
-    }
+    
 
     .formularioVendeLibro {
         width: 96%;

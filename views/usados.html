@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
     <title>Libros usados</title>
     <meta name="keywords" content="LIBROS, LIBRERÍA, LECTURA, VENDE, COMPRA">
     <meta name="description" content="Usado pero igual de útil, encuentra el libro que buscas y te lo envíamos a tu casa">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--HEADER-->
@@ -55,9 +57,10 @@
         
     </header>
     <!--MAIN CONTENT-->
-    <main class="nu__main">
-        <h1 class="tituloPagina">LIBROS USADOS</h1>
-        <nav class="nav__lateralUsados">
+    <main class="nu__main row">
+        <h1 class="tituloPagina col-12">LIBROS USADOS</h1>
+        
+        <nav class="nav__lateralUsados col-sm-2">
             <label for="buscadorLibroUsados">Buscar libro</label>
             <input type="text" id="buscadorLibroUsados" value="Nombre o autor...">
             <p class="buscarPorGeneroUsados">Filtrar por género</p>
@@ -73,161 +76,178 @@
             </ul>
         </nav>
 
-        <section class="contenido">
-            
-            <table class="contenido__tabla">
-                <tr>
-                    <th>Nombre del Libro</th>
-                    <th>Autor del libro</th>
-                    <th>Precio</th>
-                    <th>Estado</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>Libro 1</td>
-                    <td>Autor 1</td>
-                    <td>$ 460</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 2</td>
-                    <td>Autor 2</td>
-                    <td>$ 350</td>
-                    <td>Buen estado</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 3</td>
-                    <td>Autor 3</td>
-                    <td>$ 190</td>
-                    <td>Buen estado</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 4</td>
-                    <td>Autor 4</td>
-                    <td>$ 260</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 5</td>
-                    <td>Autor 5</td>
-                    <td>$ 960</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 6</td>
-                    <td>Autor 6</td>
-                    <td>$ 560</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 7</td>
-                    <td>Autor 7</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 8</td>
-                    <td>Autor 8</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 9</td>
-                    <td>Autor 9</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 10</td>
-                    <td>Autor 10</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 11</td>
-                    <td>Autor 11</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 12</td>
-                    <td>Autor 12</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 13</td>
-                    <td>Autor 13</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 14</td>
-                    <td>Autor 14</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 15</td>
-                    <td>Autor 15</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 16</td>
-                    <td>Autor 16</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 17</td>
-                    <td>Autor 17</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 18</td>
-                    <td>Autor 18</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 19</td>
-                    <td>Autor 19</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-                <tr>
-                    <td>Libro 20</td>
-                    <td>Autor 20</td>
-                    <td>$$$</td>
-                    <td>Como nuevo</td>
-                    <td><div class="btn btn--verUsado"><a href="./libro.html">Ver libro</a></div></td>
-                </tr>
-            </table>
-        </section>
+        <section class="contenido col-sm-8">
+            <div class="row  justify-content-around">
+                 <div class="col-2">Nombre del Libro</div>
+                 <div class="col-2">Autor del libro</div>
+                 <div class="col-2">Precio</div>
+                 <div class="col-2"></div>
+
+            </div>
+            <div class="row align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 1</div>
+                <div class="col-2">Autor 1</div>
+                <div class="col-2">$ 460</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 2</div>
+                <div class="col-2">Autor 2</div>
+                <div class="col-2">$ 350</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 3</div>
+                <div class="col-2">Autor 3</div>
+                <div class="col-2">$ 190</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 4</div>
+                <div class="col-2">Autor 4</div>
+                <div class="col-2">$ 260</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 5</div>
+                <div class="col-2">Autor 5</div>
+                <div class="col-2">$ 960</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 6</div>
+                <div class="col-2">Autor 6</div>
+                <div class="col-2">$ 560</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 7</div>
+                <div class="col-2">Autor 7</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 8</div>
+                <div class="col-2">Autor 8</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 9</div>
+                <div class="col-2">Autor 9</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 10</div>
+                <div class="col-2">Autor 10</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 11</div>
+                <div class="col-2">Autor 11</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 12</div>
+                <div class="col-2">Autor 12</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 13</div>
+                <div class="col-2">Autor 13</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 14</div>
+                <div class="col-2">Autor 14</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 15</div>
+                <div class="col-2">Autor 15</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 16</div>
+                <div class="col-2">Autor 16</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 17</div>
+                <div class="col-2">Autor 17</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 18</div>
+                <div class="col-2">Autor 18</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 19</div>
+                <div class="col-2">Autor 19</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+            <div class="row  align-items-center justify-content-around mt-1">
+                <div class="col-2"><img src="../sources/portadaLibro.jpg" width="80%" alt=""></div>
+                <div class="col-2">Libro 20</div>
+                <div class="col-2">Autor 20</div>
+                <div class="col-2">$$$</div>
+                <div class="col-2"><div class="btn--verNuevo"><a class="enlaceVerNuevo" href="./libro.html">Ver libro</a></div></div>
+
+            </div>
+    </section>
     </main>
      <!--FOOTER-->
-     <footer>
+     <footer class="footer">
         <div class="footer__info">
             <span class="footer__info__titulo">INFORMACIÓN</span>
             <p class="footer__info__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iste voluptatum sunt minima at, neque fuga recusandae vitae facilis quia magnam eaque beatae!</p>

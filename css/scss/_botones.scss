@@ -12,12 +12,18 @@ $botones:(
     border-radius: 10%;
     align-self: center;
     padding: 5px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 @each $boton,$color in $botones{
     .btn--#{$boton}{
         @extend .btn;
         background-color: $color;
+        
     }
     @if $boton == verNuevo {
         .btn--#{$boton}:hover{
