@@ -1,12 +1,13 @@
+@import "./variables";
 
 .nav__lateralUsados {
     
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #470D21;
-    padding: 25px;
+    display: map-get($estilos, display);
+        flex-direction: map-get($estilos , flex-direction);
+        justify-content: map-get($estilos , justify-content);
+        align-items: map-get($estilos , align-items);
+        background-color:  $color-secundario;
+        padding:  map-get($estilos , padding);
     label{
         display: block;
         margin: 10px 0;

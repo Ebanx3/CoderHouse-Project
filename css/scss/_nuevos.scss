@@ -1,3 +1,5 @@
+@import "./variables";
+
 .nu__main{
     width: 90%;
     margin: 10vh auto;
@@ -6,13 +8,14 @@
         width: 100%;
     }
     .nav__lateral {
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: orange;
-        padding: 25px;
+
+        display: map-get($estilos, display);
+        flex-direction: map-get($estilos , flex-direction);
+        justify-content: map-get($estilos , justify-content);
+        align-items: map-get($estilos , align-items);
+        background-color:  map-get($estilos , background-color);
+        padding:  map-get($estilos , padding);
+        
         #buscadorLibro {
             width: 90%;
             height: 30px;

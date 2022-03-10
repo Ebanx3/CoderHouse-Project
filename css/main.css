@@ -150,14 +150,17 @@ header {
 .btn--vendeLibro:active {
   background-color: #2e0077; }
 
+.naranja {
+  background-color: orange; }
+
 /* INDEX */
 .hero {
-  width: 100%;
   height: 60vh;
+  width: 100%;
   background: linear-gradient(0deg, #470D21, #9C0F48); }
   .hero__fondo {
-    width: 100%;
     height: 60vh;
+    width: 100%;
     position: absolute;
     z-index: 1;
     opacity: 15%; }

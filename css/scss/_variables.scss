@@ -1,2 +1,17 @@
 $color-primario: #9C0F48;
 $color-secundario:#470D21;
+$color-terciario: orange;
+
+$estilos:(
+    display: flex,
+    flex-direction: column,
+    justify-content: flex-start,
+    align-items: flex-start,
+    background-color: $color-terciario,
+    padding: 25px,
+);
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
