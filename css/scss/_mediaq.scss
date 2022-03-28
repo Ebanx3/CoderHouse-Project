@@ -1,0 +1,184 @@
+@media screen and (max-width: 1024px){
+    
+    main{
+        margin: 8vh 0;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .recomendados{
+        width: 100%;
+        .libro{
+            &__info{
+                &__nombre{
+                    font-size: .9rem;
+                }
+                &__descripcion{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    .comentarios{
+        .tarjeta{
+            &__info{
+                &__nombre{
+                    font-size: .9rem;
+                }
+                &__comentario{
+                    font-size:.8rem;;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .recomendados{
+        justify-content: space-around;
+        .libro{
+            width: 45%;
+        }
+    }
+
+    .seccion2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__info{
+            width: 80%;
+            .btn--vendeLibro{
+                width: 40%;
+                margin: 5vh auto ;
+            }
+        }
+        &__video{
+            width: 80%;
+            height: 60vh;
+        }
+    }
+
+    .comentarios{
+        .tarjeta{
+            flex-direction: column;
+            align-items: center;
+            &__foto{
+                height: 50%;
+            }
+            &__info{
+                padding: 5px;
+                width: 100%;
+            }
+        }
+    }
+    
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        &__info{
+            &__titulo{
+                font-size: .9rem;
+            }
+            &__texto{
+                font-size: .8rem;
+            }
+        }
+        &__redes{
+            margin-top: 5px;
+            &__titulo{
+                font-size: .9rem;
+            }
+            a{
+                i{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 425px){
+    header{
+        .nav{
+            display: block;
+            &__ul{
+                display: none;
+            }
+            &__responsive{
+                display: inline;
+                &__ul{
+                    display: none;
+                    list-style: none;
+                    &__li{
+                        a{
+                            font-size: .9rem;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &__button{
+                    float: right;
+                    position: relative;
+                    right: 10px;
+                }
+            }
+            &__responsive:hover > ul{
+                display: block;
+            }
+        }
+    }
+
+    main{
+        section{
+            .recomendados{
+                .libro{
+                    width: 90%;
+                }
+            }
+            .seccion2{
+                margin: 0;
+                padding: 10vh 5px;
+                &__info{
+                    width: 96%;
+                }
+                &__video{
+                    width: 95%;
+                    height: 40vh;
+                }
+            }
+            .comentarios{
+                display: flex;
+                flex-direction: column;
+                .tarjeta{
+                    &__info{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .formularioVendeLibro{
+            width: 90%;
+        }
+    }
+
+    .footer{
+        &__redes{
+            width: 70%;
+        }
+    }
+
+    .nu__main{
+        width: 100%;
+        .coontenido{
+            width: 100% !important;
+            padding: 0 !important;
+        }
+    }
+
+
+}

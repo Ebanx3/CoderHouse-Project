@@ -10,8 +10,8 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #9C0F48;
-  z-index: 5; }
+  background-color: #3b007e;
+  z-index: 8; }
   header .nav {
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,10 @@ header {
       display: none;
       color: white;
       font-size: 1.6rem;
-      margin-right: 10px; }
+      margin-right: 10px;
+      text-align: center; }
+    header .nav__ul {
+      margin-bottom: 0; }
     header .nav__ul__li {
       display: inline;
       list-style: none;
@@ -36,8 +39,8 @@ header {
         text-decoration: none;
         color: white;
         text-shadow: 0 1px 1px black; }
-    header .nav__ul__li:hover {
-      background-color: #470D21; }
+    header .nav__ul__li a:hover {
+      color: #b6b6b6; }
 
 @keyframes logo-anim {
   0% {
@@ -45,38 +48,8 @@ header {
   100% {
     transform: scale(1); } }
 
-.usuario {
-  display: none;
-  position: absolute;
-  right: -5%;
-  background-color: #9C0F48;
-  width: 35%;
-  list-style-type: none;
-  height: 35vh;
-  padding: 10px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%); }
-
-.usuario__li:hover > ul {
-  display: block; }
-
-.usuario li {
-  display: block;
-  margin: 5px 0;
-  float: right;
-  width: 90%; }
-
-.usuario__li samp {
-  color: white;
-  font-size: 1rem; }
-
-.usuario li a {
-  font-size: 0.7rem; }
-
-.usuario li a:hover {
-  color: #bbbbbb; }
-
 .footer {
-  background-color: #470D21;
+  background-color: #24078b;
   color: white;
   padding: 15px;
   display: flex; }
@@ -116,7 +89,7 @@ header {
     color: white; }
 
 .btn--verUsado {
-  background-color: orange; }
+  background-color: #cf78e0; }
 
 .btn--verUsado:hover {
   background-color: #eb6a00; }
@@ -127,7 +100,7 @@ header {
     color: white; }
 
 .btn--verNuevo {
-  background-color: #9C0F48; }
+  background-color: #3b007e; }
 
 .btn--verNuevo:hover {
   background-color: #701334; }
@@ -151,13 +124,14 @@ header {
   background-color: #2e0077; }
 
 .naranja {
-  background-color: orange; }
+  background-color: #cf78e0; }
 
 /* INDEX */
 .hero {
   height: 60vh;
   width: 100%;
-  background: linear-gradient(0deg, #470D21, #9C0F48); }
+  background: linear-gradient(0deg, #24078b, #3b007e);
+  position: relative; }
   .hero__fondo {
     height: 60vh;
     width: 100%;
@@ -180,17 +154,25 @@ header {
     .hero__text__lema {
       color: #F9E4D4;
       z-index: 3; }
+  .hero .wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 5; }
 
 body {
   width: 100%;
   font-family: sans-serif;
   margin: 0 auto;
-  background-color: #F9E4D4; }
+  background-color: #f1fcfc; }
 
 main {
-  width: 90%;
-  min-height: 80vh;
-  margin: 8vh auto; }
+  margin: 8vh auto;
+  min-height: 75vh; }
+
+section {
+  width: 100%;
+  overflow-x: hidden; }
 
 .recomendados {
   display: flex;
@@ -202,21 +184,22 @@ main {
     padding: 15px;
     overflow: hidden;
     width: 30%;
-    background: linear-gradient(#F9E4D4, #f8c24d8a);
+    background-color: #080942;
     box-shadow: 0 1px 1px black;
     justify-content: space-around;
     transition: all 1s; }
     .recomendados .libro__imagen {
       max-width: 40%;
       max-height: 200px;
-      border: 1px solid black;
+      border: 1px solid white;
       align-self: center; }
     .recomendados .libro__info {
       width: 60%;
       padding: 5px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 10% 1fr 15%; }
+      grid-template-rows: 10% 1fr 15%;
+      color: white; }
       .recomendados .libro__info__nombre {
         font-size: 1.2rem;
         font-weight: bold;
@@ -245,7 +228,7 @@ main {
         opacity: 0%; }
   .recomendados .libro:hover {
     transform: scale(1.2);
-    box-shadow: 0 3px 1px #5f0707; }
+    box-shadow: 0 3px 1px #353434; }
   .recomendados__verMas {
     align-self: flex-end; }
 
@@ -256,7 +239,7 @@ main {
 .seccion2 {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(#D67D3E, #bb6457);
+  background: linear-gradient(#c898ff, #c181ec);
   margin: 20vh 0;
   padding: 10vh 20px; }
   .seccion2__info {
@@ -272,7 +255,7 @@ main {
     display: inline-block;
     position: relative;
     width: 50%;
-    height: 40vh; }
+    height: 50vh; }
 
 .btn-blue {
   background-color: #602dd4;
@@ -296,7 +279,7 @@ main {
     margin-bottom: 5vh; }
   .comentarios .tarjeta {
     display: flex;
-    border: #9C0F48 solid 1px; }
+    border: #3b007e solid 1px; }
     .comentarios .tarjeta__foto {
       height: 90%;
       width: 40%;
@@ -322,7 +305,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: orange;
+    background-color: #cf78e0;
     padding: 25px; }
     .nu__main .nav__lateral #buscadorLibro {
       width: 90%;
@@ -345,9 +328,8 @@ main {
       .nu__main .nav__lateral .listaGeneros li a:hover {
         color: #92425e; }
   .nu__main .contenido {
-    height: 70vh;
+    height: 90vh;
     padding: 5px;
-    width: 80%;
     overflow: hidden;
     overflow-y: scroll; }
 
@@ -357,7 +339,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #470D21;
+  background-color: #24078b;
   padding: 25px; }
   .nav__lateralUsados label {
     display: block;
@@ -448,128 +430,100 @@ main {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
   main {
-    width: 100%;
-    padding: 0; }
-  .seccion2__video {
-    height: 40vh; }
-  .tarjeta__info__comentario {
-    font-size: 0.9rem; } }
+    margin: 8vh 0; }
+  section {
+    width: 100%; }
+  .recomendados {
+    width: 100%; }
+    .recomendados .libro__info__nombre {
+      font-size: .9rem; }
+    .recomendados .libro__info__descripcion {
+      font-size: .8rem; }
+  .comentarios .tarjeta__info__nombre {
+    font-size: .9rem; }
+  .comentarios .tarjeta__info__comentario {
+    font-size: .8rem; } }
 
 @media screen and (max-width: 768px) {
-  .libro__info__descripcion {
-    font-size: 0.8rem; }
-  .libro__info__nombre {
-    font-size: 0.9rem; }
-  .recomendados .libro {
-    width: 45%; }
-  .seccion2__info {
-    margin: 0 auto;
-    width: 90%; }
-  .seccion2__video {
-    width: 90%;
-    margin: 5vh auto; }
-  .comentarios {
-    grid-template-columns: repeat(2, 1fr); }
-  .comentarios__titulo {
-    grid-column: 1/3; }
-  .nu__main {
-    width: 100%; }
-  .nav__lateral {
-    padding: 10px; }
-  .nav__lateralUsados {
-    padding: 10px; }
-  #buscadorLibro {
-    width: 100%; }
-  #buscadosLibroUsados {
-    width: 100%; }
-  .libro__descripcion {
-    font-size: 1rem; }
-  .libro:hover {
-    transform: scale(1.1); } }
+  .recomendados {
+    justify-content: space-around; }
+    .recomendados .libro {
+      width: 45%; }
+  .seccion2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .seccion2__info {
+      width: 80%; }
+      .seccion2__info .btn--vendeLibro {
+        width: 40%;
+        margin: 5vh auto; }
+    .seccion2__video {
+      width: 80%;
+      height: 60vh; }
+  .comentarios .tarjeta {
+    flex-direction: column;
+    align-items: center; }
+    .comentarios .tarjeta__foto {
+      height: 50%; }
+    .comentarios .tarjeta__info {
+      padding: 5px;
+      width: 100%; }
+  .footer {
+    flex-direction: column;
+    align-items: center; }
+    .footer__info__titulo {
+      font-size: .9rem; }
+    .footer__info__texto {
+      font-size: .8rem; }
+    .footer__redes {
+      margin-top: 5px; }
+      .footer__redes__titulo {
+        font-size: .9rem; }
+      .footer__redes a i {
+        font-size: 1.2rem; } }
 
 @media screen and (max-width: 425px) {
-  main {
-    width: 100%;
-    padding: 0; }
   header .nav {
     display: block; }
-    header .nav__responsive {
-      display: inline; }
-      header .nav__responsive__button {
-        float: right;
-        margin-right: 5px;
-        margin-top: 3px; }
-      header .nav__responsive .nav__ul__responsive {
-        display: none; }
-        header .nav__responsive .nav__ul__responsive__li a {
-          font-size: 0.8rem;
-          color: white;
-          text-decoration: none;
-          margin-left: 10px; }
-        header .nav__responsive .nav__ul__responsive__li samp {
-          font-size: 0.8rem;
-          margin-left: 10px; }
-        header .nav__responsive .nav__ul__responsive__li .usuario {
-          right: 0;
-          width: 50%;
-          height: 45vh;
-          background-color: #470D21;
-          position: absolute;
-          top: 0; }
-          header .nav__responsive .nav__ul__responsive__li .usuario li {
-            margin: 3px 5px; }
-    header .nav__responsive:hover > .nav__ul__responsive {
-      display: inline; }
     header .nav__ul {
       display: none; }
-      header .nav__ul__li {
-        display: block; }
-  .hero {
-    height: 40vh; }
-    .hero__fondo {
-      height: 40vh; }
-    .hero__text__titulo {
-      font-size: 1.3rem; }
-    .hero__text__lema {
-      font-size: 1rem; }
-  .recomendados .libro {
+    header .nav__responsive {
+      display: inline; }
+      header .nav__responsive__ul {
+        display: none;
+        list-style: none; }
+        header .nav__responsive__ul__li a {
+          font-size: .9rem;
+          color: white;
+          text-decoration: none; }
+      header .nav__responsive__button {
+        float: right;
+        position: relative;
+        right: 10px; }
+    header .nav__responsive:hover > ul {
+      display: block; }
+  main section .recomendados .libro {
     width: 90%; }
-  .seccion2 {
-    width: 100%; }
-    .seccion2__video {
-      width: 100%;
-      height: 30vh; }
-  .comentarios {
-    grid-template-columns: 1fr; }
-    .comentarios__titulo {
-      grid-column: 1/2;
-      font-size: 1.2rem; }
-  .comentarios__info__nombre {
-    font-size: 0.9rem; }
-  .footer {
+  main section .seccion2 {
+    margin: 0;
+    padding: 10vh 5px; }
+    main section .seccion2__info {
+      width: 96%; }
+    main section .seccion2__video {
+      width: 95%;
+      height: 40vh; }
+  main section .comentarios {
+    display: flex;
     flex-direction: column; }
-    .footer__redes {
-      width: 100%;
-      margin: 5vh 0; }
+    main section .comentarios .tarjeta__info {
+      text-align: center; }
+  main .formularioVendeLibro {
+    width: 90%; }
+  .footer__redes {
+    width: 70%; }
   .nu__main {
-    grid-template-columns: 1fr;
-    margin: 5vh 0; }
-    .nu__main .contenido {
-      margin: 10vh 0;
-      width: 100%; }
-  .tituloPagina {
-    grid-column: 1/2; }
-  #buscadorLibro {
-    width: 70%;
-    align-self: center; }
-  .formularioVendeLibro {
-    width: 96%; }
-  fieldset div label {
-    font-size: 0.8rem; }
-  .libroCompleto {
-    flex-direction: column; }
-  .libro__inf {
     width: 100%; }
-  .talvez {
-    text-align: center;
-    font-size: 1.5rem; } }
+    .nu__main .coontenido {
+      width: 100% !important;
+      padding: 0 !important; } }

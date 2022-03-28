@@ -10,7 +10,8 @@
         padding: 15px;
         overflow:hidden;
         width: 30%;
-        background: linear-gradient(#F9E4D4, #f8c24d8a);
+        //background: linear-gradient(#170549, #0000008a);
+        background-color: rgb(8, 9, 66);
         box-shadow: 0 1px 1px black;
         justify-content: space-around;
         transition: all 1s;
@@ -18,7 +19,7 @@
 
             max-width: 40%;
             max-height: 200px;
-            border: 1px solid black;
+            border: 1px solid white;
             align-self: center;
         }
         &__info {
@@ -27,6 +28,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 10% 1fr 15%;
+            color: white;
             &__nombre {
                 font-size: 1.2rem;
                 font-weight: bold;
@@ -63,7 +65,7 @@
     }
     .libro:hover{
         transform: scale(1.2);
-        box-shadow: 0 3px 1px rgb(95, 7, 7);
+        box-shadow: 0 3px 1px rgb(53, 52, 52);
     
     }
     &__verMas {
